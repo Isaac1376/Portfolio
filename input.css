@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-150 { animation-delay: 150ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-250 { animation-delay: 250ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-350 { animation-delay: 350ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-450 { animation-delay: 450ms; }
+.animation-delay-500 { animation-delay: 500ms; }
+.animation-delay-550 { animation-delay: 550ms; }
+.animation-delay-600 { animation-delay: 600ms; }
+
+/* Start invisible for animation */
+.animate-on-load {
+    opacity: 0;
+}
+
+/* Scroll-triggered reveal (used by JS) */
+.js-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.js-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.js-reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.js-reveal-scale.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger children (used with js-stagger) */
+.js-stagger-child {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.js-stagger-child.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Magnetic & tilt effects - enable transitions */
+.js-magnetic,
+.js-tilt {
+    transition: transform 0.3s ease-out;
+}
+
+/* Navbar hide/show on scroll */
+#navbar {
+    transition: transform 0.3s ease;
+}
+
+#navbar.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+/* Typing cursor */
+.typing-cursor::after {
+    content: '|';
+    animation: blink 0.7s step-end infinite;
+    color: inherit;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* ===== Dotted background animation (global subtle motion) ===== */
+
+.dot-grid {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -20;
+    background-image: radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.35) 1px, transparent 0);
+    background-size: 26px 26px;
+    opacity: 0.35;
+    mix-blend-mode: soft-light;
+}
+
+.dark .dot-grid {
+    background-image: radial-gradient(circle at 1px 1px, rgba(51, 65, 85, 0.75) 1px, transparent 0);
+    opacity: 0.22;
+}
+
+@keyframes dotDrift {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-26px, -26px, 0);
+    }
+}
+
+.dot-grid--animated {
+    animation: dotDrift 20s linear infinite;
+}
+
+.dot-grid--slow {
+    animation: dotDrift 36s linear infinite;
+    opacity: 0.28;
+}
+
+/* ===== Scroll progress bar ===== */
+
+.scroll-progress {
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: 3px;
+    z-index: 40;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, rgba(148, 163, 184, 0.2));
+}
+
+.scroll-progress-inner {
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    transform: scaleX(0);
+    background: linear-gradient(90deg, #b820e6, #da7d20, #22c55e);
+    box-shadow: 0 0 12px rgba(248, 250, 252, 0.45);
+}
+
+.dark .scroll-progress-inner {
+    box-shadow: 0 0 14px rgba(15, 23, 42, 0.9);
+}
+
+/* ===== Section heading accent with subtle dotted underline ===== */
+
+.section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 120%;
+    height: 2px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    background-image: radial-gradient(circle at 2px 1px, rgba(148, 163, 184, 0.9) 1px, transparent 0);
+    background-size: 10px 4px;
+    opacity: 0.7;
+    transition: transform 0.45s ease-out;
+}
+
+.js-reveal.is-visible .section-heading::after,
+.js-reveal-scale.is-visible .section-heading::after {
+    transform: translateX(-50%) scaleX(1);
+}
