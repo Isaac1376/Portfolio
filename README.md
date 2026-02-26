@@ -21,7 +21,7 @@ I build websites that are modern, user-friendly and business-ready.
 
 ## 🌐 Live Portfolio
 
-🔗 https://isaac1376.github.io/dhivagar_portfolio/
+🔗 https://isaac1376.github.io/Portfolio/
 
 ---
 
