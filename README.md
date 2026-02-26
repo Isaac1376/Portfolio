@@ -1,99 +1,127 @@
-<!-- ========================== -->
-<!-- 🔥 PREMIUM GITHUB README  -->
-<!-- ========================== -->
-
-<h1 align="center">
-  Hi 👋, I'm YOUR_NAME
-</h1>
-
-<h3 align="center">
-  🚀 Full Stack Developer | Open Source Enthusiast | Problem Solver
-</h3>
+<h1 align="center">Hi 👋, I'm Dhivagar M</h1>
+<h3 align="center">WordPress Developer | Frontend Developer | React Learner</h3>
 
 <p align="center">
-  <a href="https://github.com/YOUR_USERNAME">
-    <img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="profile views"/>
-  </a>
+  <img src="https://readme-typing-svg.herokuapp.com?color=F75C7E&size=22&center=true&vCenter=true&width=600&lines=WordPress+Developer;Divi+%26+Elementor+Specialist;WooCommerce+Expert;Frontend+Developer;React+JS+Learner" />
 </p>
 
 ---
 
-## 🧠 About Me
+## 👨‍💻 About Me
 
-- 🔭 Currently working on **Scalable Web Applications**
-- 🌱 Learning **System Design & Cloud Architecture**
-- 👯 Looking to collaborate on **Open Source Projects**
-- 💬 Ask me about **React, Node.js, APIs, Databases**
-- ⚡ Fun fact: I turn ☕ into scalable software
+💻 Passionate **WordPress Developer** from Chennai, India  
+🎨 Specialized in **Divi Builder & Elementor**  
+🛒 Experienced in **WooCommerce & Payment Gateway Integration**  
+⚡ Currently building projects in **React JS**  
+🎯 Focused on clean UI, responsive layouts & performance  
 
----
-
-## 🎨 Tech Stack
-
-### 👨‍💻 Languages
-![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logo=javascript)
-![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logo=typescript)
-![Python](https://img.shields.io/badge/-Python-black?style=for-the-badge&logo=python)
-
-### ⚙️ Frameworks
-![React](https://img.shields.io/badge/-React-black?style=for-the-badge&logo=react)
-![NodeJS](https://img.shields.io/badge/-Node.js-black?style=for-the-badge&logo=node.js)
-![Express](https://img.shields.io/badge/-Express-black?style=for-the-badge&logo=express)
-
-### ☁️ Cloud & Tools
-![AWS](https://img.shields.io/badge/-AWS-black?style=for-the-badge&logo=amazon-aws)
-![Docker](https://img.shields.io/badge/-Docker-black?style=for-the-badge&logo=docker)
-![Git](https://img.shields.io/badge/-Git-black?style=for-the-badge&logo=git)
+I build websites that are modern, user-friendly and business-ready.
 
 ---
 
-## 📊 GitHub Stats
+## 🌐 Live Portfolio
+
+🔗 https://isaac1376.github.io/dhivagar_portfolio/
+
+---
+
+# 🛠 Tech Stack
+
+### 🌍 WordPress
+- WordPress Development
+- Divi Builder
+- Elementor
+- WooCommerce
+- Payment Gateway Integration
+- Website Optimization
+- Maintenance & Support
+
+### 💻 Frontend
+- HTML5
+- CSS3
+- JavaScript
+- React JS (Learning & Building Projects)
+
+### ⚙ Tools
+- VS Code
+- Git & GitHub
+- Figma
+- Adobe Photoshop
+
+---
+
+# 🚀 Featured Projects
+
+---
+
+## 🏫 RK Vision Academy (Live Website)
+
+🌐 https://rkvisionacademy.com/
+
+**Stack:** WordPress • Divi • Content Management  
+
+✔ Designed & structured full educational website  
+✔ Embedded learning videos  
+✔ Organized academic content  
+✔ Responsive design  
+✔ Ongoing updates & maintenance  
+
+---
+
+## 🧠 MCQ Application (React Project)
+
+🔗 https://isaac1376.github.io/MCQ_APPLICATION/
+
+**Stack:** React JS  
+
+✔ Dynamic question rendering  
+✔ Score calculation logic  
+✔ Interactive UI  
+✔ React Hooks state management  
+
+---
+
+## 🐍 Snake Game (React)
+
+✔ Real-time movement logic  
+✔ Keyboard interaction  
+✔ Score tracking system  
+
+---
+
+## ♟ Chess Game (In Progress)
+
+✔ Board rendering  
+✔ Move validation  
+✔ AI opponent planned  
+
+---
+
+# 💼 Services I Offer
+
+✔ WordPress Website Development  
+✔ Divi & Elementor Customization  
+✔ WooCommerce Store Setup  
+✔ Payment Gateway Integration  
+✔ Website Redesign  
+✔ Bug Fixes & Maintenance  
+
+---
+
+# 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical&hide_border=true" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=radical&hide_border=true" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=isaac1376&show_icons=true&theme=tokyonight" />
 </p>
 
 ---
 
-## 🔥 GitHub Streak
+# 📫 Contact Me
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=YOUR_USERNAME&theme=radical&hide_border=true"/>
-</p>
-
----
-
-## 🏆 Achievements
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=radical&no-frame=true&row=1&column=6"/>
-</p>
+📍 Chennai, India  
+📧 Dhivagar1376@gmail.com  
+📱 +91 7358404880  
 
 ---
 
-## 🌐 Connect With Me
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/dhivagar1376/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
-  </a>
-  <a href="https://x.com/Dhivagar1376">
-    <img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=twitter"/>
-  </a>
-  <a href="mailto:Dhivagar1376@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail"/>
-  </a>
-</p>
-
----
-
-## 🐍 Contribution Snake Animation
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg"/>
-</p>
-
----
-
-⭐ From https://github.com/Isaac1376/Portfolio.git
+<h3 align="center">⭐ Open to WordPress Developer & Frontend Developer Opportunities ⭐</h3>
