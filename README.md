@@ -111,9 +111,10 @@ I build websites that are modern, user-friendly and business-ready.
 # 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=isaac1376&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=isaac1376&show_icons=true&theme=tokyonight&count_private=true&hide_border=false" alt="Isaac1376's GitHub Stats" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=isaac1376&layout=compact&theme=tokyonight&hide_border=false" alt="Most Used Languages" />
 </p>
-
 ---
 
 # 📫 Contact Me
