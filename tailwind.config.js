@@ -21,6 +21,7 @@ export default {
       fontFamily: {
         sans: ['"SF Pro Display"', 'Inter', 'system-ui', 'sans-serif'],
         display: ['"Dancing Script"', '"SF Pro Display"', 'Inter', 'system-ui', 'sans-serif'],
+        gothic: ['"UnifrakturMaguntia"', 'system-ui', 'serif'],
       },
       boxShadow: {
         glass: '0 8px 32px rgba(0, 0, 0, 0.12)',
