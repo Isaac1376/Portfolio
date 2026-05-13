@@ -108,6 +108,20 @@ I build websites that are modern, user-friendly and business-ready.
 
 ---
 
+<title>Dhivagar | React Developer Portfolio</title>
+
+<meta 
+  name="description" 
+  content="Dhivagar portfolio website showcasing React development, UI/UX design, frontend projects, and creative works."
+/>
+
+<meta 
+  name="keywords" 
+  content="Dhivagar, React Developer, Web Developer, Portfolio, UI UX Designer, Frontend Developer"
+/>
+
+<meta name="author" content="Dhivagar" />
+
 # 📊 GitHub Stats
 
 <p align="center">
