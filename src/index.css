@@ -5,10 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: max(5.75rem, env(safe-area-inset-top));
   }
 
   body {
     @apply antialiased transition-colors duration-500 ease-out;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body.light {
@@ -47,6 +51,6 @@
   }
 
   .section-anchor {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: max(5.75rem, env(safe-area-inset-top));
   }
 }

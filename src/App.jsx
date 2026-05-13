@@ -1,9 +1,10 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, MotionConfig } from 'framer-motion';
 import CursorGlow from './components/CursorGlow';
 import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import ScrollProgress from './components/ScrollProgress';
+import Seo from './components/Seo';
 import Footer from './sections/Footer';
 import Hero from './sections/Hero';
 
@@ -15,8 +16,12 @@ const Contact = lazy(() => import('./sections/Contact'));
 
 function SectionFallback() {
   return (
-    <div className="flex min-h-[40vh] items-center justify-center px-4 py-24">
-      <div className="h-10 w-10 animate-spin rounded-full border-2 border-accent border-t-transparent dark:border-cyan-400 dark:border-t-transparent" />
+    <div className="flex min-h-[50dvh] items-center justify-center px-4 py-20">
+      <div
+        className="h-11 w-11 animate-spin rounded-full border-2 border-accent border-t-transparent dark:border-cyan-400 dark:border-t-transparent"
+        role="status"
+        aria-label="Loading section"
+      />
     </div>
   );
 }
@@ -34,17 +39,18 @@ export default function App() {
       <AnimatePresence>{loading && <LoadingScreen key="loading" />}</AnimatePresence>
 
       {!loading && (
-        <>
+        <MotionConfig reducedMotion="user">
+          <Seo />
           <a
             href="#main"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[80] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-white"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-[max(1rem,env(safe-area-inset-top))] focus:z-[80] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-white"
           >
             Skip to content
           </a>
           <ScrollProgress />
           <Navbar />
           <CursorGlow />
-          <main id="main">
+          <main id="main" role="main">
             <Hero />
             <Suspense fallback={<SectionFallback />}>
               <About />
@@ -55,7 +61,7 @@ export default function App() {
             </Suspense>
           </main>
           <Footer />
-        </>
+        </MotionConfig>
       )}
     </>
   );

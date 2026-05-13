@@ -8,7 +8,7 @@ const reactRecommended = react.configs.flat.recommended;
 const reactJsxRuntime = react.configs.flat['jsx-runtime'];
 
 export default [
-  { ignores: ['dist'] },
+  { ignores: ['dist', '.gh-pages-worktree/**', 'node_modules/**'] },
   js.configs.recommended,
   {
     files: ['**/*.{js,jsx}'],

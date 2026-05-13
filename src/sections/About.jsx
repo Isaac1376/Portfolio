@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Section from '../components/Section';
-import { fadeUp, staggerContainer } from '../animations/variants';
+import { fadeInLeft, fadeInRight, popIn, staggerContainer, staggerContainerSlow } from '../animations/variants';
 
 const skills = [
   { name: 'React & Modern JS', value: 92 },
@@ -45,42 +45,54 @@ export default function About() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: '-60px' }}
-        className="grid gap-10 lg:grid-cols-2"
+        viewport={{ once: true, margin: '-10% 0px', amount: 0.12 }}
+        className="grid gap-8 lg:grid-cols-2 lg:gap-10"
       >
         <motion.article
-          variants={fadeUp}
-          className="glass-card rounded-3xl p-8 shadow-glass-lg lg:p-10"
+          variants={fadeInLeft}
+          whileHover={{ y: -4, transition: { type: 'spring', stiffness: 360, damping: 26 } }}
+          className="glass-card rounded-2xl p-6 shadow-glass-lg sm:rounded-3xl sm:p-8 lg:p-10"
         >
-          <h3 className="text-xl font-bold text-slate-900 dark:text-white">Hi, I&apos;m Dhivagar M</h3>
-          <p className="mt-4 leading-relaxed text-slate-600 dark:text-slate-300">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white sm:text-xl">Hi, I&apos;m Dhivagar M</h3>
+          <p className="mt-4 text-sm leading-relaxed text-slate-600 dark:text-slate-300 sm:text-base">
             I&apos;m a web developer and creative designer focused on polished interfaces, fast WordPress
             builds, and React-powered experiences. I blend systematic craft with expressive visuals —
             Apple-like clarity with a cyberpunk edge in motion and light.
           </p>
-          <p className="mt-4 leading-relaxed text-slate-600 dark:text-slate-300">
+          <p className="mt-4 text-sm leading-relaxed text-slate-600 dark:text-slate-300 sm:text-base">
             From diagnostic portals to academy platforms, I ship responsive, SEO-aware sites that feel
             premium on every breakpoint.
           </p>
-          <div className="mt-8 grid gap-6 sm:grid-cols-3">
+          <motion.div
+            variants={staggerContainerSlow}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="mt-8 grid grid-cols-3 gap-3 sm:gap-6"
+          >
             {stats.map((s) => (
               <motion.div
                 key={s.label}
-                variants={fadeUp}
-                whileHover={{ y: -4 }}
-                className="rounded-2xl border border-slate-200/80 bg-white/60 p-4 text-center shadow-md backdrop-blur dark:border-white/10 dark:bg-white/5"
+                variants={popIn}
+                whileHover={{ y: -6, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="rounded-2xl border border-slate-200/80 bg-white/60 p-3 text-center shadow-md backdrop-blur dark:border-white/10 dark:bg-white/5 sm:p-4"
               >
-                <p className="text-2xl font-bold text-accent dark:text-cyan-300">{s.value}</p>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                <p className="text-xl font-bold text-accent dark:text-cyan-300 sm:text-2xl">{s.value}</p>
+                <p className="mt-1 text-[0.65rem] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400 sm:text-xs">
                   {s.label}
                 </p>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </motion.article>
 
-        <motion.div variants={fadeUp} className="glass-card rounded-3xl p-8 lg:p-10">
-          <h3 className="text-xl font-bold text-slate-900 dark:text-white">Core strengths</h3>
+        <motion.div
+          variants={fadeInRight}
+          whileHover={{ y: -4, transition: { type: 'spring', stiffness: 360, damping: 26 } }}
+          className="glass-card rounded-2xl p-6 sm:rounded-3xl sm:p-8 lg:p-10"
+        >
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white sm:text-xl">Core strengths</h3>
           <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
             Skill levels reflect my ongoing focus — always leveling up.
           </p>
