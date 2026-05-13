@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Dhivagar M</h1>
-<h3 align="center">WordPress Developer | Frontend Developer | React Learner</h3>
+<h3 align="center">WordPress Developer | Frontend Developer | React Learner| Kali Linux Tools </h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=F75C7E&size=22&center=true&vCenter=true&width=600&lines=WordPress+Developer;Divi+%26+Elementor+Specialist;WooCommerce+Expert;Frontend+Developer;React+JS+Learner" />
