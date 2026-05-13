@@ -51,8 +51,8 @@ export default function Hero() {
           </motion.div>
 
           <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
-            <span className="block font-gothic text-5xl tracking-[0.24em] text-neon text-slate-100 drop-shadow sm:text-6xl lg:text-7xl">
-              Dhivagar&nbsp;M
+            <span className="block font-gothic text-5xl text-neon text-slate-100 drop-shadow sm:text-6xl lg:text-7xl">
+              Dhivagar M
             </span>
             <span className="mt-4 block font-display text-4xl italic text-gradient text-neon sm:text-5xl lg:text-6xl">
               Web Developer & Creative Designer
