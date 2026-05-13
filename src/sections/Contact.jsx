@@ -28,6 +28,7 @@ const socials = [
 export default function Contact() {
   const [status, setStatus] = useState('idle');
   const [error, setError] = useState('');
+  const [providerMsg, setProviderMsg] = useState('');
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
   const whatsappHref = getWhatsAppChatUrl(
@@ -37,6 +38,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+    setProviderMsg('');
     setStatus('sending');
 
     try {
@@ -44,6 +46,7 @@ export default function Contact() {
       if (result.ok) {
         setStatus('sent');
         setForm({ name: '', email: '', message: '' });
+        if (result.providerMessage) setProviderMsg(result.providerMessage);
         window.setTimeout(() => setStatus('idle'), 5000);
       } else {
         setStatus('idle');
@@ -218,6 +221,9 @@ export default function Contact() {
                 >
                   Sent — I&apos;ll reply soon. Check spam if you don&apos;t hear back.
                 </motion.p>
+              )}
+              {providerMsg && (
+                <p className="text-xs text-slate-500 dark:text-slate-400">{providerMsg}</p>
               )}
               {error && (
                 <p className="text-sm text-rose-600 dark:text-rose-400">{error}</p>

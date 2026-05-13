@@ -31,18 +31,24 @@ export async function submitPortfolioMessage({ name, email, message }) {
   try {
     data = await res.json();
   } catch {
-    return {
-      ok: false,
-      message:
-        'Unexpected reply from mail service. If this keeps happening, use WhatsApp or email me directly.',
-    };
+    // Some edge cases return a non-JSON response even though the email is accepted.
+    return res.ok
+      ? { ok: true, providerMessage: 'Sent.' }
+      : {
+          ok: false,
+          message:
+            'Unexpected reply from mail service. If this keeps happening, use WhatsApp or email me directly.',
+        };
   }
 
+  // FormSubmit commonly returns { success: "true", message: "..." } for AJAX.
+  // We treat any 2xx as "sent" and surface provider message for debugging.
   const success =
-    data &&
-    (data.success === true ||
+    res.ok &&
+    (!data ||
+      data.success === true ||
       data.success === 'true' ||
-      (typeof data.message === 'string' && /thank you/i.test(data.message)));
+      typeof data.success === 'undefined');
 
   if (!res.ok || !success) {
     const msg =
@@ -52,5 +58,8 @@ export async function submitPortfolioMessage({ name, email, message }) {
     return { ok: false, message: msg };
   }
 
-  return { ok: true };
+  return {
+    ok: true,
+    providerMessage: typeof data?.message === 'string' ? data.message : undefined,
+  };
 }
