@@ -7,6 +7,8 @@
 
 ---
 
+<img width="1254" height="1254" alt="sunday " src="https://github.com/user-attachments/assets/492fe01a-2bd6-4f79-8a44-f94c90d7de06" />
+
 ## 👨‍💻 About Me
 
 💻 Passionate **WordPress Developer** from Chennai, India  
